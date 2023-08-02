@@ -1,0 +1,1 @@
+int ds_dec(void* pin,int lin, void* pout, int lout, int flg);
