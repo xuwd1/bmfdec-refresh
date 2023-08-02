@@ -1,4 +1,6 @@
 #include <stdint.h>
+#ifndef PARSER_H
+#define PARSER_H
 
 enum mof_qualifier_type {
   MOF_QUALIFIER_UNKNOWN,
@@ -98,3 +100,5 @@ struct mof_classes {
 
 struct mof_classes parse_bmf(char *buf, uint32_t size);
 void free_classes(struct mof_class *classes, uint32_t count);
+
+#endif
